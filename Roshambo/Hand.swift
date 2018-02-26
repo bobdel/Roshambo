@@ -1,5 +1,5 @@
 //
-//  GamePiece.swift
+//  Hand.swift
 //  Roshambo
 //
 //  Created by Robert DeLaurentis on 2/22/18.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-enum Hand: Int {
+enum Hand: Int, CustomStringConvertible {
+
   case rock = 1
   case paper
   case scissors
@@ -16,4 +17,18 @@ enum Hand: Int {
   static var random: Hand {
     return Hand(rawValue: Int(1 + arc4random() % 3))!
   }
+
+
+  var description: String {
+    switch self {
+    case .rock:
+      return "Rock"
+    case .paper:
+      return "Paper"
+    case .scissors:
+      return "Scissors"
+    }
+  }
+
+
 }

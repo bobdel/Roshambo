@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		612C179020428A86009DC313 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612C178F20428A86009DC313 /* GameState.swift */; };
 		61A254C5203F420000008997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A254C4203F420000008997 /* AppDelegate.swift */; };
 		61A254CA203F420000008997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A254C8203F420000008997 /* Main.storyboard */; };
 		61A254CC203F420000008997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A254CB203F420000008997 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		612C178F20428A86009DC313 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		61A254C1203F420000008997 /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A254C4203F420000008997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61A254C9203F420000008997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				61A254D9203F429F00008997 /* ResultViewController.swift */,
 				61A254DD203F71C800008997 /* Hand.swift */,
 				61A254DF203F85BA00008997 /* Game.swift */,
+				612C178F20428A86009DC313 /* GameState.swift */,
 				61A254D8203F428000008997 /* Support */,
 			);
 			path = Roshambo;
@@ -156,6 +159,7 @@
 				61A254C5203F420000008997 /* AppDelegate.swift in Sources */,
 				61A254E0203F85BA00008997 /* Game.swift in Sources */,
 				61A254D7203F426000008997 /* MainViewController.swift in Sources */,
+				612C179020428A86009DC313 /* GameState.swift in Sources */,
 				61A254DE203F71C800008997 /* Hand.swift in Sources */,
 				61A254DA203F429F00008997 /* ResultViewController.swift in Sources */,
 			);

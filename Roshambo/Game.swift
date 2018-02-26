@@ -8,29 +8,24 @@
 
 import Foundation
 
-enum GameState {
-  case win
-  case lose
-  case draw
-}
 
 struct Game {
 
   var hand1: Hand
-  let hand2 = Hand.random
+  let hand2: Hand
 
   init(player: Hand) {
     self.hand1 = player
+    self.hand2 = Hand.random
+    print("Game init complete")
   }
 
+  // return win, lose, or draw
   var playerStatus: GameState {
     return play(hand1, hand2)
   }
 
-  var labelText: String {
-    return getLabelText(hand1, hand2)
-  }
-
+  // determine winner
   func play(_ hand1: Hand, _ hand2: Hand) -> GameState {
 
     if hand1 == hand2 { return .draw }
@@ -44,23 +39,4 @@ struct Game {
       return (hand2 == .paper ? .win : .lose)
     }
   }
-
-  func getLabelText(_ hand1: Hand, _ hand2: Hand) -> String {
-
-    let handSet = Set([hand1, hand2])
-
-    switch handSet {
-    case Set([.paper, .scissors]):
-      return ("Scissors CUT Paper")
-    case Set([.rock, .scissors]):
-      return ("Rock CRUSHES Scissors")
-    case Set([.rock, .paper]):
-      return ("Paper COVERS Rock")
-    default:
-      return ("Draw")
-    }
-
-  }
-
-
 }
